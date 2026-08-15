@@ -1,4 +1,4 @@
-const API_URL = "http://192.168.1.7:5000/api";
+const API_URL = "https://voice-to-task-agent.onrender.com";
 
 export interface ProcessedTask {
   transcript: string;
@@ -22,7 +22,7 @@ export async function processVoice(
   );
 
   const response = await fetch(
-    `${API_URL}/tasks/process-voice`,
+    `${API_URL}/api/tasks/process-voice`,
     {
       method: "POST",
       body: formData,

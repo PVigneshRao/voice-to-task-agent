@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "VoiceTask AI",
-    "slug": "voice-task-ai",
+    "slug": "simple-voice-to-task-assistant",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,12 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.vigneshraosteam.simplevoicetotaskassistant"
     },
     "web": {
       "output": "static",
@@ -39,11 +44,19 @@
           }
         }
       ],
-      "expo-audio"
+      "expo-audio",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "832e78d5-258e-45ab-9243-298d82e17798"
+      }
+    },
+    "owner": "vigneshraos-team"
   }
 }
