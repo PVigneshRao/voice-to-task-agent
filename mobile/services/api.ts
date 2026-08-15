@@ -1,4 +1,4 @@
-const API_URL = "http://192.168.1.7:5000";
+const API_URL = "https://voice-to-task-agent.onrender.com";
 
 export interface ProcessedTask {
   transcript: string;
